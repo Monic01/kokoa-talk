@@ -1,13 +1,13 @@
 @import "reset.css";
 
-@import "/component/status-bar.css";
-@import "/component/component-nav.css";
-@import "/component/badge.css";
-@import "/component/component-header.css";
-@import "/component/component-user.css";
-@import "/component/openchat-list.css";
-@import "/component/alt-icons.css";
-@import "/component/sizing-mobile.css";
+@import "component/status-bar.css";
+@import "component/component-nav.css";
+@import "component/badge.css";
+@import "component/component-header.css";
+@import "component/component-user.css";
+@import "component/openchat-list.css";
+@import "component/alt-icons.css";
+@import "component/sizing-mobile.css";
 
 
 @import "welcome.css";
