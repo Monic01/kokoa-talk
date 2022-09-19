@@ -47,3 +47,15 @@
     display: flex;
     align-items: center;
 }
+
+.lasted-version {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lasted-version-column:last-child {
+    opacity: 0.6;
+    font-size: 16px;
+}
