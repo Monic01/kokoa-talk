@@ -10,14 +10,14 @@
 @import "component/sizing-mobile.css";
 
 
-@import "welcome.css";
-@import "friends.css";
-@import "chat.css";
-@import "find.css";
-@import "more.css";
-@import "settings.css";
-@import "user-chat.css";
-@import "anonymous.css";
+@import "screen/welcome.css";
+@import "screen/friends.css";
+@import "screen/chat.css";
+@import "screen/find.css";
+@import "screen/more.css";
+@import "screen/settings.css";
+@import "screen/user-chat.css";
+@import "screen/anonymous.css";
 
 body {
     min-width: 350px;
