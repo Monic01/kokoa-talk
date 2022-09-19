@@ -1,0 +1,23 @@
+.sizing-mobile {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: tomato;
+    color: white;
+    position: absolute;
+    top: 0;
+
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+@media screen and (max-width:650px) {
+    .sizing-mobile {
+        display: none;
+    }
+}

@@ -1,0 +1,62 @@
+.screen-header__component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 5px;
+
+    position: sticky;
+    top: 27px;
+    z-index: 2;
+}
+
+.screen-header__component span:first-child {
+    margin-left: 20px;
+}
+
+.screen-header__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.chats-title {
+    position: relative;
+    right: -30px;
+}
+
+.screen-header__icons {
+    margin-right: 20px;
+}
+
+.screen-header__icons span {
+    margin: 0 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.screen-header__icons>span:last-child {
+    position: relative;
+}
+
+.screen-header__gear-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: -15px;
+    top: -5px;
+    animation: gearDotMove 1s linear infinite;
+}
+
+@keyframes gearDotMove {
+    0% {
+        transform: none;
+    }
+
+    100% {
+        transform: scale(1.3);
+    }
+}

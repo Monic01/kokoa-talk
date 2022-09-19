@@ -1,0 +1,7 @@
+.screen-chat__user-list {
+    margin: 40px 20px 0 20px;
+}
+
+.screen-chat__user-list ul li {
+    margin-bottom: 15px;
+}

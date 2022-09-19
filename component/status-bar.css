@@ -1,0 +1,66 @@
+.component__status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0;
+
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.component__status-bar>div {
+    width: 33%;
+}
+
+.status-bar__service {
+    display: flex;
+    margin-left: 10px;
+}
+
+.fa-wifi {
+    margin-left: 10px;
+}
+
+.status-bar__watch {
+    display: flex;
+    justify-content: center;
+}
+
+.status-bar__battery {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.fa-battery-full,
+.fa-bolt {
+    margin-left: 5px;
+}
+
+.fa-bolt {
+    animation: boltAnimation 3s linear infinite;
+}
+
+.color-tomato {
+    color: tomato;
+}
+
+.color-green {
+    color: rgb(10, 206, 10);
+}
+
+@keyframes boltAnimation {
+    0% {
+        transform: none;
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}

@@ -1,0 +1,170 @@
+.user-chat__screen {
+    background-color: rgb(132, 170, 206);
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-chat__background {
+    background-color: rgb(132, 170, 206);
+}
+
+.user-chat__screen-time {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.user-chat__screen-row {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.user-chat__screen-row {
+    animation: leftFadeIn 0.5s ease-in-out forwards;
+}
+
+.user-chat__screen-row:nth-child(2) {
+    animation: rightFadeIn 0.5s ease-in-out forwards;
+}
+
+.user-chat__screen-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-chat__screen-column img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    margin-right: 10px;
+}
+
+.user-chat__text {
+    display: flex;
+    align-items: flex-end;
+}
+
+.user-chat__author {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+.user-chat__message {
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    margin-right: 5px;
+}
+
+.user-chat__time {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.own-chat {
+    justify-content: flex-end;
+}
+
+.own-chat .user-chat__text {
+    flex-direction: row-reverse;
+}
+
+.own-chat .user-chat__message {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+}
+
+.own-chat .user-chat__time {
+    margin-right: 5px;
+}
+
+.chat-input {
+    width: 100%;
+    background-color: white;
+
+    position: fixed;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.chat-input:hover {
+    background-color: inherit;
+}
+
+.fa-square-plus {
+    transition: all 0.3s ease-in-out;
+}
+
+.chat-input:hover .fa-square-plus {
+    transform: translateX(-40px);
+}
+
+.chat-input:hover .chat-input__form input {
+    background-color: white;
+    width: 95%;
+}
+
+.chat-input__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.chat-input__form input {
+    width: 85%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s ease-in-out;
+}
+
+.form-icons {
+    position: absolute;
+    right: 25px;
+}
+
+.form-icons span {
+    display: inline-box;
+    padding: 3px 7px;
+    background-color: tomato;
+    border-radius: 50%;
+}
+
+@keyframes leftFadeIn {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes rightFadeIn {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,70 @@
+.welcome-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.welcome-header__title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.welcome-header__text {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form input:focus {
+    outline: none;
+}
+
+.login-form input,
+.login-form button {
+    width: 80%;
+    padding: 15px 10px;
+    border: none;
+    font-size: 18px;
+}
+
+.login-form input:not([type="submit"]) {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.login-form input[type="submit"] {
+    width: 85%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.login-form__find-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.login-form button {
+    width: 85%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.login-form button,
+.login-form input[type="submit"] {
+    background-color: tomato;
+    color: white;
+}

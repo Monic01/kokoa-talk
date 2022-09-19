@@ -1,0 +1,37 @@
+.alt-icons {
+    margin: 40px 20px 20px 20px;
+}
+
+.alt-icons__bar-ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.alt-icons__bar-ul:nth-child(2) {
+    margin-top: 40px;
+}
+
+
+.alt-icons__bar-item {
+    min-width: 80px;
+}
+
+
+.alt-icons__bar-item a {
+    display: block;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.alt-icons__bar-item a i {
+    font-size: 40px;
+}
+
+.alt-icons__bar-item a span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
